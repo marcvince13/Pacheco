@@ -1,19 +1,20 @@
-import React from 'react'
-import Login from './pages/Login'
-import Profile from './pages/Profile'
-import RegistrationScreen from './pages/RegistrationScreen'
-import Navigationbar from './Navigationbar'
-import { Route, Routes } from "react-router-dom"
-import ForgotPassword from './pages/ForgotPassword'
-import Dashboard from './pages/Dashboard'
-import Messages from './pages/Messages'
-import StatusScreen from './pages/StatusScreen'
-import ReviewScreen from './pages/ReviewScreen'
+import React from "react";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import RegistrationScreen from "./pages/RegistrationScreen";
+import Navigationbar from "./Navigationbar";
+import { Route, Routes } from "react-router-dom";
+import ForgotPassword from "./pages/ForgotPassword";
+import Dashboard from "./pages/Dashboard";
+import Messages from "./pages/Messages";
+import StatusScreen from "./pages/StatusScreen";
+import ReviewScreen from "./pages/ReviewScreen";
+import Activated from "./pages/Activated";
 
 function App() {
   return (
     <>
-      <Navigationbar/>
+      <Navigationbar />
       <div className="container">
         <Routes>
           <Route path="/" element={<Dashboard />} />
@@ -24,11 +25,11 @@ function App() {
           <Route path="/Messages" element={<Messages />} />
           <Route path="/StatusScreen" element={<StatusScreen />} />
           <Route path="/ReviewScreen" element={<ReviewScreen />} />
-
+          <Route path="/Activated" element={<Activated />} />
         </Routes>
-      </div> 
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

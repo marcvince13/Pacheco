@@ -97,3 +97,12 @@ button:hover{
 #chk:checked ~ .login label{
 	transform: scale(1);
 }
+
+.errortext {
+	color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+}
