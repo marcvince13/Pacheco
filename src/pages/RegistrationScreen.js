@@ -12,7 +12,6 @@ export default function RegistrationScreen() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    window.location.href = '/Profile'; // Replace with the URL of the page you want to navigate to
   };
   
   return (
@@ -30,7 +29,7 @@ export default function RegistrationScreen() {
       </label>
       <label>
         <input
-          placeholder="Last Mame"
+          placeholder="Last Name"
           type="text"
           value={Lastname}
           onChange={(event) => setLastname(event.target.value)}
@@ -60,10 +59,11 @@ export default function RegistrationScreen() {
           onChange={(event) => setPassword(event.target.value)}
         />
       </label>
-      <button type="submit">Register</button>
-      
+      <button onClick={() => window.location.href = '/Profile'} type="submit">Register</button>
     </form>
     </div>
     </div>
+  
+
   );
 }

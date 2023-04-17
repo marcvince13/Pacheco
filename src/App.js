@@ -1,11 +1,14 @@
 import React from 'react'
 import Login from './pages/Login'
-import Home from "./pages/Home"
 import Profile from './pages/Profile'
 import RegistrationScreen from './pages/RegistrationScreen'
 import Navigationbar from './Navigationbar'
 import { Route, Routes } from "react-router-dom"
-export const RegistrationContext = createContext();
+import ForgotPassword from './pages/ForgotPassword'
+import Dashboard from './pages/Dashboard'
+import Messages from './pages/Messages'
+import StatusScreen from './pages/StatusScreen'
+import ReviewScreen from './pages/ReviewScreen'
 
 function App() {
   return (
@@ -13,10 +16,15 @@ function App() {
       <Navigationbar/>
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/RegistrationScreen" element={<RegistrationScreen />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/ForgotPassword" element={<ForgotPassword />} />
+          <Route path="/Messages" element={<Messages />} />
+          <Route path="/StatusScreen" element={<StatusScreen />} />
+          <Route path="/ReviewScreen" element={<ReviewScreen />} />
+
         </Routes>
       </div> 
     </>

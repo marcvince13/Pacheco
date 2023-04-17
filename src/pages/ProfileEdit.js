@@ -7,7 +7,7 @@ function ProfileScreen(props) {
   const hobbies = ["reading", "swimming", "hiking"];
 
   return (
-    <div style={{ marginLeft: '10px' }}>
+    <div>
       <h1>{name}</h1>
       <p>Age: {age}</p>
       <p>Email: {email}</p>
@@ -17,7 +17,7 @@ function ProfileScreen(props) {
           <li key={index}>{hobby}</li>
         ))}
       </ul>
-      <button className="dashboard-button" onClick={() => window.location.href = '/ReviewScreen'} type="text" style={{width: '60%', height: '55px'}}>Review</button>
+      <button className="dashboard-button" onClick={() => window.location.href = '/ReviewScreen'} type="text" style={{width: '60%', height: '55px'}}>Done</button>
 
     </div>
   );
